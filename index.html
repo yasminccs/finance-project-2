@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Finanças Pessoais</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h2>Controle de Finanças</h2>
+            <input type="hidden" id="id" name="id">
+            <div id="transitionType">
+                <label for="transitionType" class="label">Transação: </label>
+                <select name="options" id="options" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="Transferência">Transferência</option>
+                    <option value="Depósito">Depósito</option>
+                    <option value="Empréstimo">Empréstimo</option>
+                    <option value="Recebimento">Transferência Recebida</option>
+                    <option value="Pix">Pix</option>
+                </select>
+            </div>
+            <section id="transValue">
+                <div id="value">
+                    <label for="value" class="label">Valor: </label>
+                    <input type="number" name="value" id="nmrValue" step="0.01" required>
+                </div>
+                <div id="typeTrans">
+                    <div id="typeCredit">
+                      <input type="radio" name="type" id="credit" checked><label for="credit" id="labelCredit">Entrada</label>
+                    </div>
+                    <div id="typeDebit">
+                      <input type="radio" name="type" id="debit"><label for="debit" id="labelDebit">Saída</label>
+                    </div>
+                </div>
+            </section>
+            <div id="description">
+                <textarea name="description" placeholder="Escreva uma descrição" id="descript" cols="40" rows="5" maxlength="35"></textarea>
+            </div>
+            <button id="sendBtn">Enviar</button>
+        </form>
+            <h2 id="balance">Saldo: R$0</h2>
+    </main>
+
+    <article>
+        <h1>Todas as Transações Bancárias</h1>
+        <section id="allTransitions"></section>
+    </article>
+</body>
+</html>

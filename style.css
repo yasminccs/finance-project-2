@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #e7e7f5;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    background-color: #5151e8;
+    color: white;
+    height: auto;
+    width: 95vw;
+    margin: 13px;
+    padding: 7px;
+    max-width: 420px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form > h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 25px 0px;
+}
+
+form > div {
+    margin-bottom: 10px;
+}
+
+div#value > input {
+    width: 55%;
+}
+
+div#typeTrans{
+    margin: 15px 0px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+}
+
+div#typeCredit{
+    margin-right: 20px;
+}
+
+label#labelCredit, label#labelDebit{
+    font-size: 1rem;
+}
+
+.label{
+    display: inline-block;
+    width: 97px;
+    text-align: right;
+}
+
+input#credit, input#debit {
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+    accent-color: black;
+    cursor: pointer;
+}
+
+select#options{
+    width: 55%;
+}
+
+textarea#descript {
+    width: 100%;
+}
+
+div > label, section#ident > label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+div > input, select#options, textarea#descript{
+    padding: 6px 7px;
+}
+
+div > input, select#options, textarea#descript{
+    background-color: #e7e7f5;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+textarea#descript{
+    padding: 5px;
+}
+
+button#editBtn, button#deleteBtn{
+    background-color: #5151e8;
+    color: #e7e7f5;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+button#editBtn{
+    background-color: #5151e8;
+}
+
+button#deleteBtn {
+    background-color: #e33238;
+}
+
+button#sendBtn {
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    padding: 7px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    background-color: #e7e7f5;
+}
+
+button#editBtn, button#deleteBtn{
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2#balance {
+    margin: 20px 0px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+article {
+    min-width: 260px;
+    max-width: 400px;
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+article > h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+section#allTransitions > div {
+    margin-bottom: 20px;
+}
+
+.credit {
+    font-weight: bold;
+    color: #31b95a;
+}
+    
+.debit {
+    font-weight: bold;
+    color: #f64348;
+}
+
+@media screen and (min-width: 992px){
+    body{
+        width: 98vw;
+        flex-direction: row;
+        justify-content: center;
+    }
+    main {
+        width: 30vw;
+        max-width: 550px;
+    }
+    article {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 40px;
+    }
+    button#sendBtn:hover{
+        background-color: #ccccd4;
+    }
+    
+    button#editBtn:hover, button#deleteBtn:hover {
+        filter: brightness(1.1);
+    }
+}

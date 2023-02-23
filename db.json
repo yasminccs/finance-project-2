@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "typeTrans": "Pix",
+      "value": 4000,
+      "description": "Salário",
+      "id": 1
+    },
+    {
+      "typeTrans": "Transferência",
+      "value": -450,
+      "description": "Conta de água",
+      "id": 2
+    },
+    {
+      "typeTrans": "Transferência",
+      "value": -300,
+      "description": "Conta de internet",
+      "id": 3
+    },
+    {
+      "typeTrans": "Pix",
+      "value": -40,
+      "description": "Lanche",
+      "id": 4
+    }
+  ]
+}
